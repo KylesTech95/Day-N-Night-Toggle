@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Centering the content*/
+body{
+    width: 100%;
+    background:#fff;
+}a
+#wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.toggle-container{
+    box-shadow: 0 0 10px .05px #6c6b6b;
+    border-radius:60px;
+  width: 185px;
+    height: 75px;
+  position: relative;
+  left: 45%;
+  top: 300px;
+}
+.toggle-container>.inset{
+    width: 185px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .75rem;
+    border-radius: 60px;
+    background-color: rgb(232, 224, 224);
+    box-shadow: inset 0 0 12px .05px #333;
+    /* Absolute positioning inside relative positioning*/
+    overflow: hidden;
+    transition: .3s ease;
+    transform: scale(1.25)
+
+}
+.toggle-container>.inset:hover{
+    background: #4a4b4b;
+    box-shadow: inset 0 0 12px .05px rgb(232, 224, 224);
+    cursor: pointer;
+    border: none;
+    transition: .3s ease;
+}
+.toggle-container>div.inset>div>i{
+    font-size: 25px;
+    color: #fff;
+    text-shadow: .15px .15px 4px #4b4a4a;
+    background: none;
+
+}
+
+/*Creating the toggle button - position starts in Day*/
+.toggle-btn{
+    opacity: 0;
+    height: 50%;
+    width: 40px;
+    z-index: 999;
+    border-radius: 50%;
+    transform: scale(1.75);
+    /*Absolute positioning inside relative positioning*/
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    /* animation: move .75s ease-in-out infinite alternate forwards; */
+    background: #0eea3786;
+    box-shadow: 0 0 7px .25px #fff;
+    transition: .25s ease-in;
+ }
+ .moving{
+    opacity: .5;
+    height: 50%;
+    width: 20%;
+    z-index: 999;
+    border-radius: 50%;
+    transform: scale(1.75) translateX(67px);
+    /*Absolute positioning inside relative positioning*/
+    position: absolute;
+    /* animation: move .75s ease-in-out infinite alternate forwards; */
+    background: #0eea3786;
+    box-shadow: 0 0 7px .25px #fff;
+    transition: .25s ease-in;
+ }
+ .head{
+    width: 100%;
+    height: 100px;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .head-container{
+    width: inherit;
+    height: inherit;
+  }
+  .title{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0 0 0;
+    color: silver;
+    letter-spacing: 2px;
+  }
