@@ -44,7 +44,7 @@ body{
 }
 .toggle-container>.inset:hover{
     background: #4a4b4b;
-    box-shadow: inset 0 0 12px .05px rgb(232, 224, 224);
+    box-shadow: inset 0 0 8px .25px #000;
     cursor: pointer;
     border: none;
     transition: .3s ease;
