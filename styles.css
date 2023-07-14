@@ -24,7 +24,7 @@ body{
     height: 75px;
   position: relative;
   left: 45%;
-  top: 300px;
+  top: 150px;
 }
 .toggle-container>.inset{
     width: 185px;
@@ -71,7 +71,7 @@ body{
     left: 15px;
     /* animation: move .75s ease-in-out infinite alternate forwards; */
     background: #0eea3786;
-    box-shadow: 0 0 7px .25px #fff;
+    box-shadow: 0 0 4px .25px #fff;
     transition: .25s ease-in;
  }
  .moving{
@@ -85,25 +85,25 @@ body{
     position: absolute;
     /* animation: move .75s ease-in-out infinite alternate forwards; */
     background: #0eea3786;
-    box-shadow: 0 0 7px .25px #fff;
+    box-shadow: 0 0 4px .25px #000;
     transition: .25s ease-in;
  }
- .head{
-    width: 100%;
-    height: 100px;
-    background: #333;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  .head-container{
-    width: inherit;
-    height: inherit;
-  }
-  .title{
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1rem 0 0 0;
-    color: silver;
-    letter-spacing: 2px;
-  }
+.head{
+  width: 100%;
+  height: 100px;
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.head-container{
+  width: inherit;
+  height: inherit;
+}
+.title{
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0 0 0;
+  color: silver;
+  letter-spacing: 2px;
+}
